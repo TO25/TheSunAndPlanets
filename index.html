@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <title>The sun and Planets</title>
+    <meta charset="UTF-8">
+	<meta name="keywords" content="The Solar System, Planets, The Sun">
+	<meta name="description" content="The Sun and Planets">
+	<meta name="author" content="Tanya Osipova">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+       box-sizing: border-box;
+    }
+	
+    body {
+      background-color: black;
+    }
+
+    h1  {
+      color: #732673;
+      font-size: 4vw;
+      font-family: "Arial Black", Gadget, sans-serif;
+      text-shadow: 0.5px 0.5px #000099;
+      font-variant: small-caps;
+      line-height: 0.0;
+      text-align: center;
+    }
+
+    #main_img  {
+      width: 99.4vw;
+      position: fixed;
+    }
+  </style>
+  </head>
+  <body> 
+    <h1>the sun and planets</h1>
+	<img id="main_img" src="images/solar.jpg" alt="solar system" usemap="#solarmap">
+	<map name="solarmap">
+	  <area shape="poly" coords="0, 0, 25, 0, 101, 90, 165, 224, 155, 341, 122, 415, 0, 415 " alt="sun"  href="sun.html">
+      <area shape="circle" coords="195,336,12" alt="mercury" href="mercury.html">
+      <area shape="circle" coords="265,305,20" alt="venus" href="venus.html">
+      <area shape="circle" coords="340,262,20" alt="earth" href="earth.html">
+      <area shape="circle" coords="390,216,16" alt="mars" href="mars.html">
+      <area shape="circle" coords="520,235,50" alt="jupiter" href="jupiter.html">
+      <area shape="circle" coords="648,170,40" alt="saturn" href="saturn.html">
+      <area shape="circle" coords="750,120,28" alt="uranus" href="uranus.html">
+      <area shape="circle" coords="833,75,28" alt="neptune" href="neptune.html">
+    </map>
+		
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	  <script src="jquery.rwdImageMaps.min.js"></script>
+		<script>
+	      $(document).ready(function(e) {
+            $('img[usemap]').rwdImageMaps();
+          });
+        </script>
+   </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
